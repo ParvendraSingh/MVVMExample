@@ -14,6 +14,13 @@
 		E6F6CDAB2A7A7B320088DD8A /* MVVMExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6F6CDA92A7A7B320088DD8A /* MVVMExample.xcdatamodeld */; };
 		E6F6CDAD2A7A7B340088DD8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6F6CDAC2A7A7B340088DD8A /* Assets.xcassets */; };
 		E6F6CDB02A7A7B340088DD8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6F6CDAE2A7A7B340088DD8A /* LaunchScreen.storyboard */; };
+		E6F6CDB82A7A7D480088DD8A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F6CDB72A7A7D480088DD8A /* Constant.swift */; };
+		E6F6CDBD2A7AC0370088DD8A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F6CDBC2A7AC0370088DD8A /* UserModel.swift */; };
+		E6F6CDBF2A7AC0470088DD8A /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F6CDBE2A7AC0470088DD8A /* PostModel.swift */; };
+		E6F6CDC22A7AC22C0088DD8A /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F6CDC12A7AC22C0088DD8A /* UserViewModel.swift */; };
+		E6F6CDC42A7AC23A0088DD8A /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F6CDC32A7AC23A0088DD8A /* PostViewModel.swift */; };
+		E6F6CDC62A7AC77C0088DD8A /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F6CDC52A7AC77B0088DD8A /* NetworkHandler.swift */; };
+		E6F6CDCA2A7ADF8A0088DD8A /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F6CDC92A7ADF8A0088DD8A /* PostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		E6F6CDAC2A7A7B340088DD8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6F6CDAF2A7A7B340088DD8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6F6CDB12A7A7B340088DD8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6F6CDB72A7A7D480088DD8A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		E6F6CDBC2A7AC0370088DD8A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		E6F6CDBE2A7AC0470088DD8A /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		E6F6CDC12A7AC22C0088DD8A /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		E6F6CDC32A7AC23A0088DD8A /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		E6F6CDC52A7AC77B0088DD8A /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
+		E6F6CDC92A7ADF8A0088DD8A /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +72,63 @@
 		E6F6CD9F2A7A7B320088DD8A /* MVVMExample */ = {
 			isa = PBXGroup;
 			children = (
-				E6F6CDA02A7A7B320088DD8A /* AppDelegate.swift */,
-				E6F6CDA22A7A7B320088DD8A /* SceneDelegate.swift */,
-				E6F6CDA42A7A7B320088DD8A /* ViewController.swift */,
-				E6F6CDA62A7A7B320088DD8A /* Main.storyboard */,
+				E6F6CDC82A7ACD8A0088DD8A /* Application */,
+				E6F6CDC72A7ACD770088DD8A /* HelperClasses */,
+				E6F6CDB92A7ABFDF0088DD8A /* Models */,
+				E6F6CDBA2A7ABFEF0088DD8A /* Views */,
+				E6F6CDBB2A7ABFF60088DD8A /* ViewModels */,
 				E6F6CDAC2A7A7B340088DD8A /* Assets.xcassets */,
 				E6F6CDAE2A7A7B340088DD8A /* LaunchScreen.storyboard */,
 				E6F6CDB12A7A7B340088DD8A /* Info.plist */,
 				E6F6CDA92A7A7B320088DD8A /* MVVMExample.xcdatamodeld */,
 			);
 			path = MVVMExample;
+			sourceTree = "<group>";
+		};
+		E6F6CDB92A7ABFDF0088DD8A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E6F6CDBC2A7AC0370088DD8A /* UserModel.swift */,
+				E6F6CDBE2A7AC0470088DD8A /* PostModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E6F6CDBA2A7ABFEF0088DD8A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6F6CDA62A7A7B320088DD8A /* Main.storyboard */,
+				E6F6CDA42A7A7B320088DD8A /* ViewController.swift */,
+				E6F6CDC92A7ADF8A0088DD8A /* PostViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E6F6CDBB2A7ABFF60088DD8A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E6F6CDC12A7AC22C0088DD8A /* UserViewModel.swift */,
+				E6F6CDC32A7AC23A0088DD8A /* PostViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E6F6CDC72A7ACD770088DD8A /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				E6F6CDB72A7A7D480088DD8A /* Constant.swift */,
+				E6F6CDC52A7AC77B0088DD8A /* NetworkHandler.swift */,
+			);
+			path = HelperClasses;
+			sourceTree = "<group>";
+		};
+		E6F6CDC82A7ACD8A0088DD8A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E6F6CDA02A7A7B320088DD8A /* AppDelegate.swift */,
+				E6F6CDA22A7A7B320088DD8A /* SceneDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +203,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6F6CDA52A7A7B320088DD8A /* ViewController.swift in Sources */,
+				E6F6CDC22A7AC22C0088DD8A /* UserViewModel.swift in Sources */,
 				E6F6CDA12A7A7B320088DD8A /* AppDelegate.swift in Sources */,
+				E6F6CDC62A7AC77C0088DD8A /* NetworkHandler.swift in Sources */,
+				E6F6CDB82A7A7D480088DD8A /* Constant.swift in Sources */,
+				E6F6CDBF2A7AC0470088DD8A /* PostModel.swift in Sources */,
 				E6F6CDAB2A7A7B320088DD8A /* MVVMExample.xcdatamodeld in Sources */,
+				E6F6CDC42A7AC23A0088DD8A /* PostViewModel.swift in Sources */,
+				E6F6CDBD2A7AC0370088DD8A /* UserModel.swift in Sources */,
 				E6F6CDA32A7A7B320088DD8A /* SceneDelegate.swift in Sources */,
+				E6F6CDCA2A7ADF8A0088DD8A /* PostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
